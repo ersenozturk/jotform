@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h1>JOTFORM FORM VALIDATION</h1>
+<form action="/check/">
+<table>
+  <tr>
+    <th>Form ID</th>>
+  </tr>
+  <tr>
+    <td><input type="number" name="FormID" step ="any"></td>
+  </tr>
+</table>
+   <input type="submit" value="Safe Jotform">
+</form>
+
+<p>If you click the "Safe Jotform!" button, the form-data will be sent to a page called "/check".</p>
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
+
